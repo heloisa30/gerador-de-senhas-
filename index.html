@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de Senha</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Gerador de Senha Aleatória</h1>
+    <input type="text" id="senha" class="senha" readonly placeholder="Clique em Gerar para ver a senha">
+    <button id="gerar" class="botao">Gerar Senha</button>
+
+    <div class="opcoes">
+      <label for="tamanho">Tamanho da Senha:</label>
+      <input type="number" id="tamanho" value="12" min="6" max="20">
+
+      <label for="maiusculas">
+        <input type="checkbox" id="maiusculas" checked> Incluir Maiúsculas
+      </label>
+
+      <label for="numeros">
+        <input type="checkbox" id="numeros" checked> Incluir Números
+      </label>
+
+      <label for="simbolos">
+        <input type="checkbox" id="simbolos" checked> Incluir Símbolos
+      </label>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
